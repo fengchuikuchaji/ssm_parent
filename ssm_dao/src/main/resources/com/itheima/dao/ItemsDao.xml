@@ -10,4 +10,8 @@
     <insert id="save" parameterType="Items">
         insert into items values (null,#{name},#{price},#{pic},#{createtime},#{detail})
     </insert>
+
+    <delete id="deleteById" parameterType="int">
+        delete from items where id=#{id}
+    </delete>
 </mapper>

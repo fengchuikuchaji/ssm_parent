@@ -23,4 +23,6 @@ public interface ItemsDao {
      * @return
      */
     int save(Items items);
+
+    int deleteById(int id);
 }
